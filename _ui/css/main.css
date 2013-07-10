@@ -1,0 +1,102 @@
+body {
+  margin:0;
+  padding:0;
+  background:#333;
+  color:#fff;
+  -webkit-transition:background 2s;
+}
+
+
+#controls {
+	position:relative;
+	margin-left:25px;
+	z-index:3;
+	background:#999;
+	padding:10px;
+	width:300px;
+	-webkit-border-radius:10px;
+	border:1px solid #ccc;
+}
+
+	#controls label {
+			color:#fff;
+			display:block;
+			font-size:17px;
+			color:#fff;
+		}
+
+	#controls input {
+		width:300px;
+		display:block;
+		margin-bottom:20px;
+	}
+
+	#controls input[type="button"]{
+		height:45px;
+	}
+
+#sphere {
+	background:#326598;
+}
+
+	.container {
+		margin:200px auto;
+		position:relative;
+		-webkit-perspective: 1000;
+		-webkit-transition:all 1s;
+		width:900px;
+	}
+
+	#carousel {		
+		width:800px;
+		height:400px;
+		margin:0 auto;
+		position:absolute;
+		-webkit-transform-style: preserve-3d;
+		-webkit-transform-origin:50% 0;
+		left:100px;
+		z-index:2;
+	}
+
+	#carousel figure {
+		display:block;
+		position:absolute;
+		-webkit-backface-visibility:visible;
+		opacity:0.5;
+
+	}
+
+		#carousel .unicorn {
+			height:116px;
+			background:url(../img/unicorn.png) no-repeat;
+			left:100px;
+			opacity:1;
+			top:250px;
+		}
+
+		#carousel .pole {
+			height:530px;
+			border:1px dashed #333;
+			top:-150px;
+			left:100px;
+			background: #d0e4f7;
+		}
+
+
+		#carousel .roof {
+			background:blue;
+			height:40px;
+			top:-20%;
+			opacity:.6;
+			height:22%;
+			-webkit-transition:background 2s;
+		}
+
+		#carousel .floor {
+			background:brown;
+			height:40px;
+			top:75%;
+			opacity:.6;
+			height:100%;
+			-webkit-transition:background 2s;
+		}

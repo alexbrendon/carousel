@@ -1,0 +1,44 @@
+<!doctype html>
+<head>
+  <title></title>
+  <link rel="stylesheet" href="_ui/css/reset.css">
+  <link rel="stylesheet" href="_ui/css/main.css">
+  <script src="_ui/js/libs/jquery.js"></script>
+  <script src="_ui/js/libs/easing.js"></script>
+  <script src="_ui/js/main.js"></script>
+</head>
+
+<body>
+    <div class="container">
+      <div id="carousel"></div>
+      
+    </div>
+    <div id="controls">
+        <label>Speed</label>
+        <input type="range" step=".02" value=".5" min="0" max="15" id="speed" />
+        
+        <label>Floor Width</label>
+        <input type="range" step="1" value="112" min="2" max="200" id="width" />
+
+        <label>Floor Height</label>
+        <input type="range" step="1" value="100" min="2" max="400" id="height" />
+
+        <label>Floor position</label>
+        <input type="range" step="1" value="100" min="-75" max="75" id="top" />
+
+        <label>Floor angle</label>
+        <input type="range" step="1" value="90" min="0" max="180" id="angle" />
+
+        <input type="button" id="epilepsy" value="Enable Party Mode!" />
+
+        <audio controls="controls" id="song_original" preload="auto" loop>
+          <source src="_ui/audio/circus.mp3" type="audio/mp3" />
+        </audio>
+
+        <audio controls="controls" id="song_techno" preload="auto" loop>
+          <source src="_ui/audio/techno.mp3" type="audio/mp3" />
+        </audio>
+
+      </div>
+</body>
+</html>
